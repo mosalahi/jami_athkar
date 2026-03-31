@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
+import 'screens/home_screen.dart';
 import 'services/database_service.dart';
 
 Future<void> main() async {
@@ -35,14 +36,7 @@ class JamiAthkarApp extends StatelessWidget {
           textTheme: GoogleFonts.cairoTextTheme(),
           useMaterial3: true,
         ),
-        home: const Scaffold(
-          body: Center(
-            child: Text(
-              'جامع صحيح الأذكار',
-              style: TextStyle(fontSize: 24),
-            ),
-          ),
-        ),
+        home: const HomeScreen(),
       ),
     );
   }
